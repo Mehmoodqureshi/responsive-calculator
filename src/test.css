@@ -1,0 +1,85 @@
+body {
+    font-size: 16px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  input[type="text"] {
+    font-size: 2rem;
+  }
+  .wrapper {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .clear,
+  .equals {
+    width: 48%; /* Adjust based on design */
+    height: 70px; /* Adjust based on design */
+  }
+  
+  .key-btn {
+    width: 23%; /* Adjust based on design */
+  }
+  .keypad {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: minmax(85px,auto);
+  }
+  
+  .modal-container {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  @media screen and (max-width: 675px) {
+    .sidebar {
+      transform: translateX(-100%);
+    }
+  }
+/* Existing CSS code with improvements */
+
+body {
+    font-size: 1rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  input[type="text"] {
+    font-size: 2rem;
+  }
+  
+  .wrapper {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .clear,
+  .equals {
+    width: 48%; /* Adjust based on design */
+    height: 70px; /* Adjust based on design */
+  }
+  
+  .key-btn {
+    width: 23%; /* Adjust based on design */
+  }
+  
+  .keypad {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(85px, 1fr));
+  }
+  
+  @media screen and (max-width: 675px) {
+    .sidebar {
+      transform: translateX(-100%);
+    z-index: 1; /* Adjust z-index as needed */
+    overflow: hidden; /* Prevent horizontal scroll */
+    /* Other adjustments for small screens if needed */
+  }
+  }          
